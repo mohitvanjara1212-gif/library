@@ -3,122 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>library</title>
-   
+  <title>E-Books Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body >
+<body>
 
-<header style="background-color: cadetblue; align-items: center; justify-content: center;">
-  <div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav container">
+      <h1 class="logo">📚 E-Books</h1>
 
-    <h1 class="text-center">e-books</h1>
+      <div class="nav-actions">
+        <input id="search" type="text" placeholder="Search books...">
 
-    
-    <div style="display: flex; justify-content: right; margin-bottom: 50px; ">
-      <input id="search" type="text"
-        placeholder="Search products...">
+        <button class="icon-btn">
+          🛒 <span id="cart-count">0</span>
+        </button>
 
-      <button>
-        🛒
-        <span id="cart-count">0</span>
-      </button>
-
-      <button>
-        profile
-      </button>
+        <button class="icon-btn">Profile</button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-
-<section>
-  <div>
-
-    <div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
       <h2>
-        e-books buying platforms<br>For affordable and verity of books
+        Affordable & Wide Variety of E-Books
       </h2>
       <p>
-        Discover latest books, news paper, magazines, and biography with unbeatable prices.
+        Discover books, newspapers, magazines, and biographies at unbeatable prices.
       </p>
-      <div>
-        <button>
-          Shop Now
-        </button>
-        <button>
-          Explore Deals
-        </button>
+
+      <div class="hero-buttons">
+        <button class="primary-btn">Shop Now</button>
+        <button class="secondary-btn">Explore Deals</button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- PRODUCTS -->
+  <section class="container">
+    <h2 class="section-title">Featured Products</h2>
 
-<section>
-  <div>
-    <h2>Featured Products</h2>
-
-    <div id="products">
-      <div>
-        <img src="">
-        <h3>bhagvadgita</h3>
-        <p>₹999</p>
-        <button>
-          Add to Cart
-        </button>
+    <div class="products">
+      <div class="product-card">
+        <img src="google.png" alt="Bhagavad Gita">
+        <h3>Bhagavad Gita</h3>
+        <p class="price">₹999</p>
+        <button class="primary-btn">Add to Cart</button>
       </div>
 
-      <div>
-        <img src="">
-        <h3>ramayan</h3>
-        <p>₹899</p>
-        <button>
-          Add to Cart
-        </button>
+      <div class="product-card">
+        <img src="facebook.png" alt="Ramayan">
+        <h3>Ramayan</h3>
+        <p class="price">₹899</p>
+        <button class="primary-btn">Add to Cart</button>
       </div>
 
-      <div>
-        <img src="" >
-        <h3>hanuman-chalisa</h3>
-        <p>₹499</p>
-        <button>
-          Add to Cart
-        </button>
+      <div class="product-card">
+        <img src="google.png" alt="Hanuman Chalisa">
+        <h3>Hanuman Chalisa</h3>
+        <p class="price">₹499</p>
+        <button class="primary-btn">Add to Cart</button>
       </div>
 
-      <div>
-        <img src="">
-        <h3>times now india</h3>
-        <p>₹99</p>
-        <button>
-          Add to Cart
-        </button>
+      <div class="product-card">
+        <img src="facebook.png" alt="Times Now India">
+        <h3>Times Now India</h3>
+        <p class="price">₹99</p>
+        <button class="primary-btn">Add to Cart</button>
       </div>
-       <div>
-      <h4>Delivery location check</h4>
-      <input>
-      <button type="submit">check</button>
     </div>
+  </section>
 
+  <!-- DELIVERY CHECK -->
+  <section class="delivery container">
+    <h3>Check Delivery Availability</h3>
+    <div class="delivery-box">
+      <input type="text" placeholder="Enter Pincode">
+      <button class="primary-btn">Check</button>
     </div>
-  </div>
-</section>
-<footer >
-  <div>
+  </section>
 
-    <div>
-      <h3>E-book</h3>
-      <p>India's trusted e-books marketplace.</p>
-    </div>
-    <div>
-      <h4>Customer Care</h4>
-      <ul>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h3>E-Book</h3>
+        <p>India's trusted e-books marketplace.</p>
+        <p>© 2025 E-Book Store. All rights reserved.</p>
+      </div>
+
+      <ul class="footer-links">
         <li>FAQs</li>
         <li>Returns</li>
         <li>Privacy Policy</li>
       </ul>
     </div>
-  </div>
-  <p>© 2025 ElectroStore. All rights reserved.</p>
-</footer>
+  </footer>
+
+</body>
+</html>

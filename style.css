@@ -1,0 +1,215 @@
+/* =========================
+   RESET & BASE STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 28px;
+    border-radius: 12px;
+    margin: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: brown;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+/* Right Navigation */
+.nav2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav2 input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.b1,
+.b2 {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Primary Buttons */
+.b1 {
+    background-color: cadetblue;
+    border: 2px solid rgb(29, 88, 55);
+}
+
+.b1:hover {
+    background-color: rgb(90, 160, 160);
+    transform: translateY(-2px);
+}
+
+/* Secondary Buttons */
+.b2 {
+    background-color: rgb(159, 170, 63);
+    border: 2px solid rgb(114, 124, 25);
+}
+
+.b2:hover {
+    background-color: rgb(180, 190, 90);
+}
+
+/* =========================
+   MAIN CONTAINERS
+========================= */
+.container {
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 14px;
+    padding: 40px 20px;
+    margin: 30px auto;
+    width: 95%;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.container h2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.container p {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   PRODUCTS SECTION
+========================= */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Product Card */
+.p2 {
+    width: 240px;
+    height: 380px;
+    background-color: #fff8ee;
+    border: 3px solid rgb(99, 10, 52);
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.p2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.p2 h3 {
+    margin-top: 10px;
+}
+
+/* Product Image */
+.img1 {
+    height: 180px;
+    width: 120px;
+    border: 3px solid red;
+    border-radius: 6px;
+    margin: 15px auto;
+    display: block;
+}
+
+/* =========================
+   DELIVERY SECTION
+========================= */
+.container input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    margin-right: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: burlywood;
+    border-radius: 12px;
+    margin: 30px 12px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+footer h3 {
+    color: brown;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .products {
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
